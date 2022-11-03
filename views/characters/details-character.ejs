@@ -1,5 +1,25 @@
-<h2>Details of <%= character.name %></h2>
+<!-- <h2>Details of <%= character.name %></h2>
 
 <h3>Occupation: <%= character.occupation %></h3>
 
 <p>Weapon: <%= character.weapon %></p>
+
+<a href="/characters/edit/<%= character.id %>">Edit character</a><br>
+<a href="/characters/delete/<%= character.id %>">Delete character</a>
+
+-->
+
+
+<form method="POST" action="/characters/delete/<%= character.id%>">
+
+  <label>name: <input type="text" name="name" value="<%= character.name%>" required /></label>
+  <label>occupation:<input type="text" name="occupation" value=" <%= character.occupation%>" required /></label>
+  <label>weapon :<input type="text" name="weapon" value="<%= character.weapon %>" required /></label>
+  <label>debt:<input type="checkbox" name="debt" value=" <%= character.debt %>" required /></label>
+  
+
+  <a href="/characters/delete/<%= character.id %>">Delete character</a> 
+
+</form>
+
+    <a href="/characters/edit/<%= character.id %>">Go to edit character</a> 

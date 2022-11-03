@@ -1,0 +1,16 @@
+<h1>EDIT YOUR CHARACTER HERE</h1>
+
+<form method="POST" action="/characters/update/<%= character.id%>">
+
+  <label>name: <input type="text" name="name" value="<%= character.name%>" required /></label>
+  <label>occupation:<input type="text" name="occupation" value=" <%= character.occupation%>" required /></label>
+  <label>weapon :<input type="text" name="weapon" value="<%= character.weapon %>" required /></label>
+  <label>debt:<input type="checkbox" name="debt" value=" <%= character.debt %>" required /></label>
+  <button>UPDATE</button> 
+
+  
+</form>
+
+
+
+
