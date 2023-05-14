@@ -3,3 +3,12 @@
 <h3>Occupation: <%= character.occupation %></h3>
 
 <p>Weapon: <%= character.weapon %></p>
+
+<p><%- character.debt === "true" ? "Has debt." : "No debt." %></p>
+
+<a href="/characters/edit/<%= character.id %>"
+	><button>Edit Character</button></a
+>
+<a href="/characters/delete/<%= character.id %>"
+	><button>Delete This Character</button></a
+>

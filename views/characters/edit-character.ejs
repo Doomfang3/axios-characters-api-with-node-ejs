@@ -1,0 +1,18 @@
+<form action="/characters/edit/<%- character.id %>" method="POST">
+	<label
+		>Character Name:
+		<input name="name" value="<%- character.name %>" />
+	</label>
+	<label>
+		Character Occupation:
+		<input name="occupation" value="<%- character.occupation %>" />
+	</label>
+	<label
+		>Character Debt: <input name="debt" type="checkbox" <%- character.debt ===
+		"true" ? "checked" : ""%> />
+	</label>
+	<label
+		>Character Weapon: <input name="weapon" value="<%- character.weapon %>" />
+	</label>
+	<button type="submit">Edit!</button>
+</form>
